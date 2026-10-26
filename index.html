@@ -3,167 +3,150 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>derrick@njoroge:~$ | Software Developer and Network Engineer</title>
-<meta name="description" content="Derrick Njoroge. Software developer and CCNA certified network engineer in Nairobi. I build systems and keep networks running.">
+<title>Derrick Njoroge | Software Developer and Network Engineer</title>
+<meta name="description" content="Derrick Njoroge. Software developer and CCNA certified IT professional in Nairobi, Kenya.">
 <meta property="og:title" content="Derrick Njoroge | Software Developer and Network Engineer">
-<meta property="og:description" content="Full stack systems, CCNA networking and security. Nairobi, Kenya.">
+<meta property="og:description" content="I build business systems and keep networks running. Nairobi, Kenya.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#000;--fg:#f2f2f2;--dim:#8a8a8a;--line:#262626;--card:#0a0a0a;--hi:#fff}
+:root{--bg:#ffffff;--fg:#111111;--dim:#666666;--line:#e6e6e6;--card:#fafafa;--inv:#111;--invfg:#fff}
+[data-theme="dark"]{--bg:#0b0b0b;--fg:#f2f2f2;--dim:#9a9a9a;--line:#242424;--card:#121212;--inv:#f2f2f2;--invfg:#0b0b0b}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:'JetBrains Mono',ui-monospace,Consolas,monospace;font-size:15px;line-height:1.65}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 3px);z-index:50}
-a{color:var(--hi);text-decoration:underline;text-underline-offset:3px}
-.wrap{max-width:980px;margin:0 auto;padding:0 20px}
-nav{position:sticky;top:0;background:rgba(0,0,0,.92);border-bottom:1px solid var(--line);z-index:40}
-nav .wrap{display:flex;justify-content:space-between;align-items:center;height:52px;font-size:13px}
-nav .links a{color:var(--dim);text-decoration:none;margin-left:16px}nav .links a:hover{color:var(--hi)}
-.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#fff;margin-right:8px;animation:blink 1.6s infinite}
-@keyframes blink{50%{opacity:.15}}
-.hero{padding:64px 0 40px}
-.term{border:1px solid var(--line);border-radius:10px;background:var(--card);overflow:hidden}
-.bar{display:flex;gap:7px;padding:10px 14px;border-bottom:1px solid var(--line)}.bar i{width:11px;height:11px;border-radius:50%;border:1px solid #555;display:block}
-.bar span{margin-left:auto;color:var(--dim);font-size:12px}
-.tbody{padding:20px 22px;min-height:290px;white-space:pre-wrap}
-.p{color:var(--dim)}.c{color:var(--hi);font-weight:600}
-.cur{display:inline-block;width:9px;height:18px;background:#fff;vertical-align:-3px;animation:blink 1s steps(1) infinite}
-h1{font-size:clamp(30px,6vw,58px);line-height:1.05;margin:34px 0 10px;font-weight:800;letter-spacing:-1px}
-.lead{color:var(--dim);max-width:640px;margin:0}
-.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
-.btn{border:1px solid var(--hi);padding:10px 18px;text-decoration:none;font-weight:600;font-size:14px}
-.btn.f{background:#fff;color:#000}.btn:hover{background:#fff;color:#000}
-section{padding:56px 0;border-top:1px solid var(--line)}
-h2{font-size:14px;color:var(--dim);font-weight:400;margin:0 0 22px;letter-spacing:1px}h2 b{color:var(--hi)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}
-.stat{padding:22px 18px;border-right:1px solid var(--line)}.stat:last-child{border-right:0}
-.stat b{display:block;font-size:40px;font-weight:800;line-height:1}.stat span{color:var(--dim);font-size:12px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-.card{border:1px solid var(--line);background:var(--card);padding:20px;transition:border-color .2s,transform .2s}
-.card:hover{border-color:#fff;transform:translateY(-2px)}
-.card h3{margin:0 0 4px;font-size:16px}.card .path{color:var(--dim);font-size:12px}
-.card p{color:#cfcfcf;font-size:13.5px;margin:10px 0}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.tags span{border:1px solid #444;padding:1px 8px;font-size:11.5px;color:#ddd}
-.ls{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:4px 24px;font-size:14px}
-.ls div:before{content:"drwxr-xr-x  ";color:#555}
-.meter{margin:6px 0 16px}.meter .row{display:flex;justify-content:space-between;font-size:13px}.meter .track{height:6px;border:1px solid #444;margin-top:5px}.meter .fill{height:100%;background:#fff;width:0;transition:width 1.4s ease}
-pre.net{border:1px solid var(--line);background:var(--card);padding:18px;overflow:auto;font-size:12.5px;line-height:1.4;color:#dcdcdc;margin:0}
-.log{font-size:13.5px}.log div{padding:8px 0;border-bottom:1px dashed var(--line)}.log .t{color:var(--dim);display:inline-block;width:150px}
-footer{padding:30px 0 46px;border-top:1px solid var(--line);color:var(--dim);font-size:12px;text-align:center}
-@media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}nav .links a{margin-left:10px}.log .t{display:block;width:auto}}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.65;transition:background .25s,color .25s}
+a{color:var(--fg)}
+.mono{font-family:'JetBrains Mono',ui-monospace,Consolas,monospace}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:10}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+nav .brand{font-weight:800;letter-spacing:.3px;text-decoration:none}
+nav .links{display:flex;align-items:center;gap:20px;font-size:14px}
+nav .links a{color:var(--dim);text-decoration:none}nav .links a:hover{color:var(--fg)}
+.toggle{border:1px solid var(--line);background:transparent;color:var(--fg);border-radius:20px;padding:5px 12px;font-size:13px;cursor:pointer}
+.hero{padding:88px 0 64px}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--dim);border:1px solid var(--line);border-radius:20px;padding:4px 12px}
+.status i{width:8px;height:8px;border-radius:50%;background:#22c55e;display:block}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.08;letter-spacing:-1.5px;margin:22px 0 16px;font-weight:800}
+h1 .typed{border-right:2px solid var(--fg);padding-right:4px;animation:caret 1s steps(1) infinite}
+@keyframes caret{50%{border-color:transparent}}
+.lead{font-size:18px;color:var(--dim);max-width:620px;margin:0}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:11px 20px;border-radius:8px;border:1px solid var(--fg);text-decoration:none;font-weight:600;font-size:15px}
+.btn.f{background:var(--inv);color:var(--invfg);border-color:var(--inv)}
+.btn:hover{opacity:.85}
+section{padding:60px 0;border-top:1px solid var(--line)}
+.label{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--dim);margin:0 0 10px}
+h2{font-size:28px;letter-spacing:-.5px;margin:0 0 28px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.stat{border:1px solid var(--line);border-radius:12px;padding:20px;background:var(--card)}
+.stat b{display:block;font-size:34px;font-weight:800;letter-spacing:-1px}
+.stat span{font-size:13px;color:var(--dim)}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.sk{border:1px solid var(--line);border-radius:12px;padding:20px;background:var(--card)}
+.sk h3{margin:0 0 6px;font-size:16px}.sk p{margin:0;color:var(--dim);font-size:14.5px}
+.proj{display:grid;gap:14px}
+.pr{border:1px solid var(--line);border-radius:12px;padding:22px;background:var(--card);transition:transform .2s,border-color .2s}
+.pr:hover{transform:translateY(-2px);border-color:var(--fg)}
+.pr .top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.pr h3{margin:0;font-size:18px}.pr .stack{font-size:12.5px;color:var(--dim)}
+.pr p{margin:8px 0 0;color:var(--dim);font-size:15px}
+.list{border-top:1px solid var(--line)}
+.row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.row span:last-child{color:var(--dim);font-size:14px}
+.contact{border:1px solid var(--line);border-radius:12px;padding:26px;background:var(--card)}
+.contact p{margin:6px 0}
+footer{padding:30px 0 40px;color:var(--dim);font-size:13px;text-align:center;border-top:1px solid var(--line)}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.reveal.in{opacity:1;transform:none}
+@media(max-width:680px){.stats{grid-template-columns:repeat(2,1fr)}.skills{grid-template-columns:1fr}nav .links a.hide{display:none}.hero{padding-top:60px}}
 </style>
 </head>
 <body>
-<nav><div class="wrap"><div><span class="dot"></span>derrick@nairobi:~$</div><div class="links"><a href="#stats">stats</a><a href="#stack">stack</a><a href="#projects">projects</a><a href="#contact">contact</a></div></div></nav>
+<nav><div class="wrap"><a class="brand" href="#">Derrick Njoroge</a>
+<div class="links"><a class="hide" href="#skills">Skills</a><a class="hide" href="#projects">Projects</a><a href="#contact">Contact</a><button class="toggle" id="t" aria-label="Toggle dark mode">Dark</button></div></div></nav>
 
 <header class="hero"><div class="wrap">
-<div class="term"><div class="bar"><i></i><i></i><i></i><span>bash  80x24</span></div>
-<div class="tbody" id="tty"></div></div>
-<h1>I build systems.<br>I keep networks up.</h1>
-<p class="lead">Derrick Njoroge. Software developer and CCNA certified IT engineer in Nairobi, Kenya. Full stack business systems, routing and switching, identity and device security. Heading for network engineering, with code as my edge.</p>
-<div class="btns"><a class="btn f" href="#contact">./hire_me.sh</a><a class="btn" href="https://github.com/derricks-code">github</a><a class="btn" href="https://www.linkedin.com/in/derricknjoroge">linkedin</a></div>
+<span class="status"><i></i>Available for roles in Nairobi</span>
+<h1>Software developer and<br><span class="typed" id="typed">network engineer</span></h1>
+<p class="lead">I build business systems and keep networks running. CCNA certified, with hands on experience in full stack development, routing and switching, and Microsoft identity and device management.</p>
+<div class="btns"><a class="btn f" href="#contact">Contact me</a><a class="btn" href="#projects">View projects</a></div>
 </div></header>
 
-<section id="stats"><div class="wrap">
-<h2>$ <b>cat stats.json</b></h2>
+<section class="reveal"><div class="wrap">
+<p class="label">At a glance</p>
 <div class="stats">
-<div class="stat"><b data-n="4">0</b><span>systems built and shipped</span></div>
-<div class="stat"><b data-n="20" data-s="+">0</b><span>tools and technologies used</span></div>
-<div class="stat"><b data-n="7">0</b><span>layers of the OSI model I debug across</span></div>
+<div class="stat"><b data-n="4">0</b><span>Systems built and delivered</span></div>
 <div class="stat"><b>CCNA</b><span>Cisco certified</span></div>
+<div class="stat"><b data-n="1" data-s="+">0</b><span>Year in enterprise IT operations</span></div>
+<div class="stat"><b data-n="15" data-s="+">0</b><span>Tools and technologies</span></div>
 </div>
 </div></section>
 
-<section id="stack"><div class="wrap">
-<h2>$ <b>ls ~/stack</b></h2>
-<div class="grid">
-<div>
-<div class="meter"><div class="row"><span>networking (CCNA)</span><span>routing, switching, VLANs, DHCP, DNS</span></div><div class="track"><div class="fill" data-w="85"></div></div></div>
-<div class="meter"><div class="row"><span>python</span><span>apps, automation, reports</span></div><div class="track"><div class="fill" data-w="80"></div></div></div>
-<div class="meter"><div class="row"><span>php / laravel</span><span>full stack systems</span></div><div class="track"><div class="fill" data-w="78"></div></div></div>
-<div class="meter"><div class="row"><span>sql / mysql</span><span>schema design, queries</span></div><div class="track"><div class="fill" data-w="75"></div></div></div>
-<div class="meter"><div class="row"><span>identity and devices</span><span>Entra ID, Intune, M365</span></div><div class="track"><div class="fill" data-w="75"></div></div></div>
-<div class="meter"><div class="row"><span>javascript / typescript</span><span>web interfaces</span></div><div class="track"><div class="fill" data-w="65"></div></div></div>
-</div>
-<div class="ls">
-<div>python/</div><div>php/</div><div>laravel/</div><div>javascript/</div><div>typescript/</div><div>mysql/</div><div>rest-apis/</div><div>git/</div><div>cisco-ios/</div><div>tcp-ip/</div><div>vlans/</div><div>entra-id/</div><div>intune/</div><div>microsoft-365/</div><div>access-control/</div><div>pandas/</div><div>reportlab/</div><div>wordpress/</div><div>bootstrap/</div><div>linux-basics/</div>
-</div>
-</div>
-<p class="p" style="font-size:12px;margin-top:14px"># bars show relative strength, not a test score</p>
+<section id="about" class="reveal"><div class="wrap">
+<p class="label">About</p>
+<h2>Business minded, technically driven.</h2>
+<p class="lead" style="font-size:16.5px">I hold a Bachelor of Business Information Technology, so I understand both how systems work and why a business needs them. I enjoy taking an idea to a working product, solving network and device problems methodically, and documenting everything clearly. My goal is to grow as a network engineer, with software development and cybersecurity as my edge.</p>
 </div></section>
 
-<section id="projects"><div class="wrap">
-<h2>$ <b>ls ~/projects</b></h2>
-<div class="grid">
-<div class="card"><div class="path">~/projects/sokoni-pos</div><h3>Sokoni POS</h3>
-<p>One codebase, many businesses. A point of sale platform for mini marts, restaurants, salons and hotels: sales, inventory, staff and role based access.</p>
-<div class="tags"><span>laravel</span><span>php</span><span>mysql</span><span>javascript</span><span>rbac</span></div></div>
-<div class="card"><div class="path">~/projects/bus-booking</div><h3>Bus Booking System</h3>
-<p>Route search, seat reservation, trip and pricing management, customer records and payment integration. Final year project.</p>
-<div class="tags"><span>php</span><span>mysql</span><span>javascript</span><span>bootstrap</span></div></div>
-<div class="card"><div class="path">~/projects/debt-manager</div><h3>Debt Management System</h3>
-<p>Desktop app that tracks customer balances, generates invoices automatically and prints reports. Built and deployed in production during an internship.</p>
-<div class="tags"><span>python</span><span>tkinter</span><span>mysql</span><span>reportlab</span></div></div>
-<div class="card"><div class="path">~/projects/web</div><h3>Business Websites</h3>
-<p>Responsive, SEO friendly sites with service pages, blogs and appointment booking, including a healthcare website.</p>
-<div class="tags"><span>wordpress</span><span>php</span><span>html</span><span>css</span><span>seo</span></div></div>
+<section id="skills" class="reveal"><div class="wrap">
+<p class="label">Skills</p>
+<h2>What I work with</h2>
+<div class="skills">
+<div class="sk"><h3>Networking</h3><p>CCNA level routing and switching, VLANs, IP addressing, DHCP, DNS and structured troubleshooting.</p></div>
+<div class="sk"><h3>Software Development</h3><p>Python, PHP, Laravel, JavaScript and TypeScript. REST APIs, Git and GitHub.</p></div>
+<div class="sk"><h3>Systems and Security</h3><p>Microsoft Entra ID, Intune and Microsoft 365. Access control, data protection and backup practices.</p></div>
+<div class="sk"><h3>Data and Web</h3><p>MySQL and database design, reporting with Pandas and ReportLab, WordPress and responsive websites.</p></div>
 </div>
 </div></section>
 
-<section><div class="wrap">
-<h2>$ <b>show ip interface brief</b>  <span class="p"># how I think about a network</span></h2>
-<pre class="net">            [ ISP A ]        [ ISP B ]
-                \               /
-              +-------------------+
-              |  edge router/FW   |   NAT, ACLs, failover
-              +---------+---------+
-                        |  trunk 802.1Q
-              +---------+---------+
-              |   core switch     |   STP, VLAN routing
-              +--+------+------+--+
-                 |      |      |
-           VLAN10  VLAN20  VLAN30
-           staff   servers guest wifi
-             |       |        |
-          laptops  ERP, DB   isolated</pre>
-<p class="p" style="font-size:12.5px">Segment it, secure it, monitor it, document it. Then automate the boring parts with code.</p>
-</div></section>
-
-<section><div class="wrap">
-<h2>$ <b>cat credentials.log</b></h2>
-<div class="log">
-<div><span class="t">[cert]</span>Cisco Certified Network Associate (CCNA), Cisco</div>
-<div><span class="t">[cert]</span>Data Protection Course, Strathmore University CIPIT, Oct 2025</div>
-<div><span class="t">[degree]</span>Bachelor of Business Information Technology, African Nazarene University</div>
-<div><span class="t">[target]</span>Network Engineer, with software and security on top</div>
+<section id="projects" class="reveal"><div class="wrap">
+<p class="label">Projects</p>
+<h2>Selected work</h2>
+<div class="proj">
+<div class="pr"><div class="top"><h3>Sokoni POS</h3><span class="stack mono">Laravel · PHP · MySQL</span></div>
+<p>A point of sale platform for mini marts, restaurants, salons and hotels from one codebase, covering sales, inventory, staff and role based access.</p></div>
+<div class="pr"><div class="top"><h3>Bus Booking System</h3><span class="stack mono">PHP · MySQL · JavaScript</span></div>
+<p>Route search, seat reservation, trip and pricing management, customer records and payment integration. Final year project.</p></div>
+<div class="pr"><div class="top"><h3>Debt Management System</h3><span class="stack mono">Python · MySQL · ReportLab</span></div>
+<p>A desktop application that tracks customer balances, generates invoices automatically and produces reports. Built and deployed during an internship.</p></div>
+<div class="pr"><div class="top"><h3>Business Websites</h3><span class="stack mono">WordPress · PHP · CSS</span></div>
+<p>Responsive, SEO friendly websites with service pages, blogs and appointment booking, including a healthcare website.</p></div>
 </div>
 </div></section>
 
-<section id="contact"><div class="wrap">
-<h2>$ <b>ping derrick</b></h2>
-<div class="term"><div class="bar"><i></i><i></i><i></i><span>contact</span></div>
-<div class="tbody" style="min-height:auto">PING derrick (Nairobi, Kenya): 56 data bytes
-64 bytes from <a href="mailto:derricknjoroge847@gmail.com">derricknjoroge847@gmail.com</a>: time=fast
-64 bytes from <a href="tel:+254741993410">+254 741 993 410</a>: time=fast
-64 bytes from <a href="https://github.com/derricks-code">github.com/derricks-code</a>
-64 bytes from <a href="https://www.linkedin.com/in/derricknjoroge">linkedin.com/in/derricknjoroge</a>
-<span class="p">--- 0% packet loss. open to network, systems and software roles in Nairobi ---</span></div></div>
+<section class="reveal"><div class="wrap">
+<p class="label">Credentials</p>
+<h2>Certifications and education</h2>
+<div class="list">
+<div class="row"><span>Cisco Certified Network Associate (CCNA)</span><span>Cisco</span></div>
+<div class="row"><span>Data Protection Course</span><span>Strathmore University, CIPIT · Oct 2025</span></div>
+<div class="row"><span>Bachelor of Business Information Technology</span><span>Africa Nazarene University</span></div>
+</div>
 </div></section>
 
-<footer>© <span id="y"></span> Derrick Njoroge  //  hand written HTML, no frameworks  //  uptime: always</footer>
+<section id="contact" class="reveal"><div class="wrap">
+<p class="label">Contact</p>
+<h2>Let's talk.</h2>
+<div class="contact">
+<p>Open to network engineering, systems and software roles in Nairobi.</p>
+<p><b>Email</b>&nbsp; <a href="mailto:derricknjoroge847@gmail.com">derricknjoroge847@gmail.com</a></p>
+<p><b>Phone</b>&nbsp; <a href="tel:+254741993410">+254 741 993 410</a></p>
+<p><b>LinkedIn</b>&nbsp; <a href="https://www.linkedin.com/in/derricknjoroge">linkedin.com/in/derricknjoroge</a></p>
+<p><b>GitHub</b>&nbsp; <a href="https://github.com/derricks-code">github.com/derricks-code</a></p>
+</div>
+</div></section>
+
+<footer>© <span id="y"></span> Derrick Njoroge · Nairobi, Kenya</footer>
 
 <script>
 document.getElementById('y').textContent=new Date().getFullYear();
-const L=[["$ ","whoami"],["","derrick njoroge  // software developer + network engineer"],["$ ","cat focus.txt"],["","build systems | run networks | secure users"],["$ ","nmap -sV derrick"],["","PORT     STATE  SERVICE"],["","22/tcp   open   python, php, laravel, sql"],["","179/tcp  open   routing + switching (CCNA)"],["","443/tcp  open   identity and security (Entra ID, Intune)"],["$ ","echo $STATUS"],["","available for hire in Nairobi"]];
-const t=document.getElementById('tty');let i=0;
-function line(){if(i>=L.length){t.insertAdjacentHTML('beforeend','<span class="p">$ </span><span class="cur"></span>');return}
-const [p,s]=L[i++];const d=document.createElement('div');t.appendChild(d);
-if(p){d.innerHTML='<span class="p">'+p+'</span><span class="c"></span>';const c=d.querySelector('.c');let k=0;(function ty(){if(k<s.length){c.textContent+=s[k++];setTimeout(ty,38)}else setTimeout(line,250)})()}
-else{d.textContent=s;setTimeout(line,120)}}
-line();
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;
-if(el.dataset.n){const n=+el.dataset.n,s=el.dataset.s||'';let v=0;const st=setInterval(()=>{v++;el.textContent=v+(v>=n?s:'');if(v>=n)clearInterval(st)},60)}
-if(el.dataset.w)el.style.width=el.dataset.w+'%';io.unobserve(el)}),{threshold:.4});
-document.querySelectorAll('[data-n],[data-w]').forEach(e=>io.observe(e));
+const root=document.documentElement,btn=document.getElementById('t');
+function setTheme(m){root.setAttribute('data-theme',m);btn.textContent=m==='dark'?'Light':'Dark';try{localStorage.setItem('theme',m)}catch(e){}}
+let saved=null;try{saved=localStorage.getItem('theme')}catch(e){}
+setTheme(saved||(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+btn.onclick=()=>setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark');
+const words=['network engineer','systems builder','problem solver'];let wi=0,ci=words[0].length,del=true;const tEl=document.getElementById('typed');
+setTimeout(function tick(){const w=words[wi];if(del){ci--;if(ci<=0){del=false;wi=(wi+1)%words.length}}else{ci++;if(ci>=words[wi].length){del=true;tEl.textContent=words[wi];return setTimeout(tick,2200)}}tEl.textContent=words[wi].slice(0,ci);setTimeout(tick,del?45:80)},2500);
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');e.target.querySelectorAll('[data-n]').forEach(el=>{const n=+el.dataset.n,s=el.dataset.s||'';let v=0;const st=setInterval(()=>{v++;el.textContent=v+(v>=n?s:'');if(v>=n)clearInterval(st)},70)});io.unobserve(e.target)}),{threshold:.2});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
 </script>
 </body></html>
